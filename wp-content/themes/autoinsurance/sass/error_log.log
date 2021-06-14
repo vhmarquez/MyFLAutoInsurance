@@ -1,0 +1,9 @@
+06/14/21 10:57:47: style.scss - Missing argument green: C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_header.scss on line 83, at column 9
+Call Stack:
+#0 mixin columns-loop C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_grid.scss on line 79
+#1 mixin columns-loop C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_grid.scss on line 76
+#2 mixin columns-loop C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_grid.scss on line 74: C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_header.scss on line 83, at column 9
+Call Stack:
+#0 mixin columns-loop C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_grid.scss on line 79
+#1 mixin columns-loop C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_grid.scss on line 76
+#2 mixin columns-loop C:\wamp64\www\auto-insurance\wordpress/wp-content/themes/autoinsurance/sass/layout/_grid.scss on line 74

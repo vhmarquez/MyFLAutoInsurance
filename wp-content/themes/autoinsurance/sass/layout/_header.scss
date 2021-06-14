@@ -1,0 +1,94 @@
+.site-header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+    background-color: #335eff;
+}
+
+.site-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    a {
+        color: #fff;
+    }
+}
+
+.site-branding {
+    display: flex;
+    padding: 6px 0 6px 12px;
+    justify-content: left;
+    align-items: center;
+    .material-icons {
+        font-size: 40px;
+        top: -4px;
+        position: relative;
+        color: #fff;
+        padding-right: 18px;
+    }
+}
+
+.site-cta {
+    display: flex;
+    padding: 6px 12px 6px 0;
+    justify-content: center;
+    align-items: center;
+    .material-icons {
+        font-size: 40px;
+        top: -4px;
+        position: relative;
+        color: #31b350;
+        padding-right: 18px;
+    }
+    .cta {
+        color: #fff;
+    }
+    p {
+        color: #fff;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .site-branding {
+        .custom-logo {
+            width: 300px;
+        }
+    }
+}
+
+.hero-section {
+    background-color: #335eff;
+    padding: 4em 0 !important;
+    h1,
+    h3,
+    p {
+        color: #fff;
+        &:after {
+            background-color: #fff;
+        }
+    }
+    form {
+        background: #fff;
+        padding: 32px 0;
+        border-radius: 4px;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+    }
+    input[type="submit"] {
+        width: 100%;
+    }
+    ul {
+        color: #fff;
+    }
+    .wpcf7 form.sent .wpcf7-response-output {
+        text-align: center;
+    }
+}

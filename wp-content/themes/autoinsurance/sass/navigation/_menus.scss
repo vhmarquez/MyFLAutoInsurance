@@ -1,0 +1,140 @@
+.main-navigation {
+    clear: both;
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    align-items: center;
+    .nav-menu {
+        width: 100%;
+        left: 0;
+        top: 66px;
+    }
+    ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        ul {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            float: left;
+            position: absolute;
+            top: 100%;
+            left: -999em;
+            z-index: 99999;
+            ul {
+                left: -999em;
+                top: 0;
+            }
+            li {
+                &:hover>ul,
+                &.focus>ul {
+                    left: 100%;
+                }
+            }
+            a {
+                width: 200px;
+            }
+             :hover>a,
+            .focus>a {}
+            a:hover,
+            a.focus {}
+        }
+        li:hover>ul,
+        li.focus>ul {
+            left: auto;
+        }
+    }
+    li {
+        display: block;
+        position: relative;
+        width: 100%;
+        &:hover>a,
+        &.focus>a {}
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 12px;
+        text-align: center;
+        background-color: #002349;
+        border-bottom: 1px #333 solid;
+        color: #fff;
+    }
+    .current_page_item>a,
+    .current-menu-item>a,
+    .current_page_ancestor>a,
+    .current-menu-ancestor>a {}
+}
+
+
+/* Small menu. */
+
+.menu-toggle,
+.main-navigation.toggled ul {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 12px;
+}
+
+.menu-toggle {
+    padding: 1em;
+    color: #003865 !important;
+    background-color: #fff;
+}
+
+.main-navigation.toggled ul {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1066px) {
+    .menu-toggle {
+        display: none;
+    }
+    .menu-menu-1-container {
+        width: 100%;
+        text-align: right;
+        padding-right: 12px;
+    }
+    .main-navigation ul {
+        display: block;
+        li {
+            display: inline-block;
+            position: relative;
+            width: auto;
+            &:hover>a,
+            &.focus>a {
+                background-color: rgb(248, 248, 248);
+                transition: all .3s ease-in-out;
+                box-shadow: 0 1px 0 #003865;
+            }
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 41px 12px;
+            text-align: center;
+            background-color: #fff;
+            border-bottom: 0;
+            color: $color__link;
+        }
+    }
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+    .site-main & {
+        margin: 0 0 1.5em;
+        overflow: hidden;
+    }
+    .nav-previous {
+        float: left;
+        width: 50%;
+    }
+    .nav-next {
+        float: right;
+        text-align: right;
+        width: 50%;
+    }
+}
