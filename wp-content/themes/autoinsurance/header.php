@@ -49,7 +49,8 @@
 					?>
 					<p class="site-description"><?php echo $autoinsurance_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 				<?php endif; ?>
-			</div><!-- .site-branding -->
+			</div>
+			<!-- .site-branding -->
 			<div class="site-cta col-desk-6 col-mob-6">
 				<span class="material-icons">&#xe551;</span>
 				<p class="cta">Talk to an Agent: 1-800-123-456</p>

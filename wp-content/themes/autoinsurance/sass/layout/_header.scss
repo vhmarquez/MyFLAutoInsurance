@@ -19,6 +19,11 @@
     margin: 0;
     a {
         color: #fff;
+        &:hover,
+        &:visited {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
 

@@ -841,6 +841,10 @@ textarea {
 .site-title a {
   color: #fff;
 }
+.site-title a:hover, .site-title a:visited {
+  color: #fff;
+  text-decoration: none;
+}
 .site-branding {
   display: flex;
   padding: 6px 0 6px 12px;
